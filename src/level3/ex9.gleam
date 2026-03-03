@@ -1,10 +1,11 @@
-// Ejercicio 9
-// Filtro + transformación con pipe
-// Dada una List(Int)
-// filtra solo positivos
-// multiplica × 2
-// suma todo
-// Hazlo en una sola expresión usando |> varias veces.
+//// Ejercicio 9
+//// Filtro + transformación con pipe
+//// Dada una List(Int)
+//// filtra solo positivos
+//// multiplica × 2
+//// suma todo
+//// Hazlo en una sola expresión usando |> varias veces.
+
 import gleam/int
 import gleam/list
 
