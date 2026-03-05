@@ -41,20 +41,8 @@ pub fn sum(tree tree: Tree) -> Int {
 pub fn contains(tree tree: Tree, value value: Int) -> Bool {
   case tree {
     Empty -> False
-    Node(num, left, right) -> {
-      case num == value {
-        True -> True
-        False -> {
-          let left_search = contains(left, value:)
-          let right_search = contains(right, value:)
-
-          case left_search, right_search {
-            _, True -> True
-            True, _ -> True
-            False, False -> False
-          }
-        }
-      }
+    Node(target, left, right) -> {
+      target == value || contains(left, value:) || contains(right, value:)
     }
   }
 }
